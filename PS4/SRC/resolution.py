@@ -36,7 +36,7 @@ class LOGIC_RESOLUTION:
     
     @staticmethod
     def is_always_valid(clause):
-        for i in range(len(clause) - 1):
+        for i in range(len(clause)):
             for j in range(len(clause)):
                 if LOGIC_RESOLUTION.is_inverse(clause[i], clause[j]):
                     return True
