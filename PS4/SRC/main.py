@@ -35,8 +35,7 @@ def main():
         resolver.PL_RESOLUTION()
 
         with open(output, 'w') as f:
-            resolver.print_output(f)
-        print('Solved', input, ', wrote to', output)
+            resolver.output(f)
 
 if __name__ == '__main__':
     main()
