@@ -1,5 +1,5 @@
 import os
-# from resolution import logic_resolution
+from resolution import *
 
 INPUT_DIR = 'input/'
 OUTPUT_DIR = 'output/'
@@ -30,14 +30,13 @@ def main():
             except:
                 print('There is an error when reading ', input)
                 continue
-            print(alpha)
-            print(KB)
-        # resolver = logic_resolution(KB, alpha)
-        # resolver.pl_resolution()
+            
+        resolver = LOGIC_RESOLUTION(alpha, KB)
+        resolver.PL_RESOLUTION()
 
-        # with open(output, 'w') as f:
-        #     resolver.print_output(f)
-        # print('Solved', input, ', wrote to', output)
+        with open(output, 'w') as f:
+            resolver.print_output(f)
+        print('Solved', input, ', wrote to', output)
 
 if __name__ == '__main__':
     main()
