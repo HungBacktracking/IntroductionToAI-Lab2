@@ -1,8 +1,8 @@
 import os
 from resolution import *
 
-INPUT_DIR = 'input/'
-OUTPUT_DIR = 'output/'
+INPUT_DIR = 'INPUT/'
+OUTPUT_DIR = 'OUTPUT/'
 
 def main():
     # Walkthrough files inside input directory.
